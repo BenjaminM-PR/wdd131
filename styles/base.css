@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #1959cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Asap Sharp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+header span {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 30px;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #808080;
+}
+
+
+
+main {
+    display: grid;
+    grid-template: 1fr 10fr / 2fr 1fr;
+    margin: 0 10%;
+    
+}
+
+main h1 {
+    display: block;
+    grid-column: 1/3;
+    max-height: 100%;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+section {
+    margin: 0 15px 15px 15px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+.card h2{
+    background-color: var(--primary-color);
+    color: #ffffff;    
+}
+
+.left {
+    position: relative;
+}
+
+.left img {
+    position: absolute;
+    right: 0;
+    max-height: 300px;
+
+}
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
