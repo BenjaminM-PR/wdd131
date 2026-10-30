@@ -17,11 +17,14 @@ body {
 
 }
 
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
 header span {
     display: block;
     text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
     padding: 30px;
     font-size: 20px;
 }
@@ -83,9 +86,13 @@ section {
 
 .left img {
     position: absolute;
-    right: 0;
+    right: 10px;
     max-height: 300px;
 
+}
+
+.left p {
+    margin-right: 30%;
 }
 
 
