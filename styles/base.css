@@ -62,7 +62,8 @@ nav a:hover {
 main {
     display: grid;
     grid-template: 1fr 10fr / 2fr 1fr;
-    margin: 0 10%;
+    max-width: 90%;
+    justify-self: center;
     
 }
 
@@ -115,4 +116,8 @@ footer {
     color: #ffffff;
     padding: 20px;
     text-align: center;
+}
+
+.modification {
+    color: #ebfc00;
 }
