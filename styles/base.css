@@ -41,6 +41,7 @@ nav ul{
 
 nav ul li {
     flex: 1 1 100%;
+    text-decoration: none;
 }
 
 nav a {
