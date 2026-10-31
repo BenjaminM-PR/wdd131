@@ -96,7 +96,11 @@ section {
     position: relative;
 }
 
-.left img {
+.left div {
+    position: relative;
+}
+
+.top img {
     position: absolute;
     right: 15px;
     max-height: 300px;
@@ -108,6 +112,48 @@ section {
     margin-right: 30%;
 }
 
+
+
+.bottom h3 {
+    text-align: center;
+    margin: 0 0 5px 35px;
+    border-bottom: 1px solid #000000;
+    max-width: 70%;
+}
+
+.bottom img {
+    max-height: 200px;
+    position: absolute;
+    left: 15px;
+    border: 1px solid #000000;
+    
+}
+
+.bottom p {
+    text-align: right;
+    margin: 0 0 0 300px;
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.right li {
+    margin: 15px 20px;
+}
+.right a {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.right a:hover {
+    color: #64119b;
+}
 
 
 
