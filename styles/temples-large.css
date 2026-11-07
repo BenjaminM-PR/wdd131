@@ -1,5 +1,9 @@
+* {
+    --primary-color: rgb(10, 10, 238);
+}
+
 @media only screen and (min-width: 500px) {
-    #menu {
+    #display-menu {
         display: none;
     }
     h1 {
@@ -8,9 +12,7 @@
     }
     .title h1 {
         display: block;
-        background-color: purple;
         padding: 15px;
-
     }
     
 
@@ -20,15 +22,18 @@
 
     header {
         display: flex;
-        background-color: purple;
+        background-color: var(--primary-color);
         justify-content: space-between;
         min-width: 100%;
     }
 
     nav ul {
         display: flex;
-        justify-content: flex-end;
         margin-right: 15px;
+    }
+    
+    nav {
+        margin: 10px;
     }
 
     .selection li {

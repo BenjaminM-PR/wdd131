@@ -1,5 +1,5 @@
 const mainnav = document.querySelector('.selection');
-const hambutton = document.querySelector('#menu');
+const hambutton = document.querySelector('#display-menu');
 const maintitle = document.querySelector('.title')
 
 hambutton.addEventListener('click', () => {

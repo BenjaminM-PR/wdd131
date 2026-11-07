@@ -1,6 +1,8 @@
 
 * {
     margin: 0 0;
+    --primary-color: #0a0aee;
+    --highlight-color: #ecfd00;
 }
 body {
     font-family: "Asap Sharp", sans-serif;
@@ -13,14 +15,14 @@ body {
 
 
 .title h1 {
-    background-color: purple;
+    background-color: var(--primary-color);
     color: white;
     position: relative;
     padding: 10px;
 }
 
 
-#menu {
+#display-menu {
     display: block;
     padding: 0.5rem 0.75rem;
 
@@ -34,13 +36,13 @@ body {
     text-align: center;
 }
 
-#menu::before {
+#display-menu::before {
     content: "≡";
 
 }
 
 nav {
-    background-color: purple;
+    background-color: var(--primary-color);
     
 }
 
@@ -60,8 +62,8 @@ nav {
 
 .selection a:hover,
 .selection a:active {
-    color: yellow;
-    border: 1px solid yellow;
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
 }
 
 .show li {
@@ -69,7 +71,7 @@ nav {
     align-items: center;
 }
 
-#menu.show::before {
+#display-menu.show::before {
     content: "❌";
 }
 
@@ -78,6 +80,9 @@ h2 {
     text-align: center;
 }
 
+#display-menu:hover {
+    border: 1px solid var(--highlight-color);
+}
 
 main {
     max-width: 840px;
@@ -103,7 +108,7 @@ main {
 
 footer {
     text-align: center;
-    background-color: purple;
+    background-color: var(--primary-color);
     color: white;
     padding: 25px;
 }
