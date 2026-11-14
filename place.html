@@ -3,53 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Page</title>
-    <meta name="description" content="Website about *country* and respective information">
+    <title>Place Page Peru</title>
+    <meta name="description" content="Website about Peru and respective information">
     <meta name="Author" content="Benjamin Paiva">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 
 </head>
 <body>
     
     <header>
-        <h1>Country</h1>
+        <h1>Perú</h1>
     </header>
 
 
     <main>
         <div class="menu">
             <picture class="hero">
-                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-large.webp" alt="Temple Santiago Concepcion" width="500" height="250">
+                <source media="(max-width: 750px)" srcset="images/lima-hero-small.webp">
+                <img src="images/lima-hero-large.webp" alt="A view of Lima Peru" width="500" height="250">
             </picture>
 
             <section class="data">
-                <h3>data</h3>
+                <h2>data</h2>
                 <div>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
+                    <div class="row">
+                        <div class="col left">Area:</div>
+                        <div class="col right">value</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Population:</div>
+                        <div class="col right">value</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Capital:</div>
+                        <div class="col right">value</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Languages:</div>
+                        <div class="col right">value</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Currency:</div>
+                        <div class="col right">Time Zone</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Calling Code:</div>
+                        <div class="col right">value</div>
+                    </div>
+                    <div class="row">
+                        <div class="col left">Internet TLD:</div>
+                        <div class="col right">value</div>
+                    </div>
                 </div>
             </section>
             
             <section class="weather">
-                <h3>weather</h3>
-                <picture class="weather">
-                    <source media="(max-width: 500px)" srcset="images/weather.webp">
-                    <img src="images/weather.webp" alt="Temple Santiago Concepcion" width="50" height="50">
-                </picture>
-
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
+                <h2>weather <span id="weatherlogo"></span></h2>
+                <img src="images/weather.svg" alt="Sun with clouds" width="50" height="50">
+                <div class="row">
+                    <div class="col left">Temperature:</div>
+                    <div class="col right" id="temperature">4°C</div>
+                </div>
+                <div class="row">
+                    <div class="col left">Conditions:</div>
+                    <div class="col right">Cloudy</div>
+                </div>
+                <div class="row">
+                    <div class="col left">Wind:</div>
+                    <div class="col right" id="wind-speed">10Km/H</div>
+                </div>
+                <div class="row">
+                    <div class="col left">Wind Chill:</div>
+                    <div class="col right"><span id="WindChill"></span></div>
+                </div>
             </section>
         </div>
     </main>
