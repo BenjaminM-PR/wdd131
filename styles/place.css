@@ -1,8 +1,11 @@
+:root {
+    --base: rgb(226, 23, 23);
+    --translucent: hsla(0, 100%, 50%, 0.555);
+}
 * {
     margin: 0 0;
     padding: 0 0;
     text-align: center;
-
 }
 
 
@@ -23,12 +26,12 @@ body {
 
 header h1 {
     padding: 10px;
-    background-color: red;
-    color: white;
+    background-color: var(--base);
+    color: rgb(255 255 255 / 255);
 }
 
 section.data {
-    border-bottom: 2px grey solid;
+    border-bottom: 2px rgb(128, 128, 128) solid;
 }
 
 .row {
@@ -57,6 +60,6 @@ main section {
 
 footer {
     padding: 10px;
-    background-color: rgb(173, 8, 8);
-    color: white;
+    background-color: var(--base);
+    color: rgb(255 255 255 / 255);
 }

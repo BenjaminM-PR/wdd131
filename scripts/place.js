@@ -5,12 +5,6 @@ currentyear.innerHTML = `©<span class="highlight">${today.getFullYear()}</span>
 const LastModified = document.getElementById("LastModified").textContent = document.lastModified;
 
 
-
-const weather = document.querySelector("#weatherlogo");
-weather.innerHTML = `⛅<span class="highlight"></span>`;
-
-
-
 function calculateWindChill(temperature, speed) {
     return 13.12 + (0.6215 * temperature) - (11.37 * (speed ** 0.16)) + (0.3965 * temperature * (speed ** 0.16))
 };

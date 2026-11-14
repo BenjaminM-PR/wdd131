@@ -15,17 +15,21 @@
 
 
     section {
-        background-color: hsla(0, 0%, 100%, 0.479);
+        background-color: hsla(0, 0%, 100%, 0.637);
         margin: 2rem;
     }
 
     section h2 {
-        background-color: hsla(0, 100%, 50%, 0.555);
-        color: white;
+        background-color: var(--translucent);
+        color: rgb(255 255 255 / 255);
         padding: 10px;
         position: absolute;
         top: 2px;
         left: -1rem;
+    }
+
+    section h2::after {
+        content: "⛅"
     }
 
     section.data {
