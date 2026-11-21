@@ -3,6 +3,9 @@
     margin: 0 0;
     --primary-color: #0a0aee;
     --highlight-color: #ecfd00;
+    --grey: #9c9b9b;
+    --light: #ecebeb;
+    --label: #2643a3;
 }
 body {
     font-family: "Asap Sharp", sans-serif;
@@ -55,7 +58,7 @@ nav {
     display: block;
     padding: 0.75rem;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     text-align: center;
 
 }
@@ -90,8 +93,8 @@ main {
 }
 
 .temple-item {
-    border: 1px solid #9c9b9b;
-    background-color: #ecebeb;
+    border: 1px solid var(--grey);
+    background-color: var(--light);
     width: 250px;
     place-items: center;
     text-align: center;
@@ -111,8 +114,8 @@ main {
     height: auto;
     display: block;
     margin: 15px;
-    border: 1px solid #cecece;
-    box-shadow: 0 0 10px #9b9b9b;
+    border: 1px solid var(--light);
+    box-shadow: 0 0 10px var(--grey);
 }
 
 #temple-list h3 {
@@ -120,12 +123,12 @@ main {
 }
 
 .label {
-    color: #2643a3;
+    color: var(--label);
 }
 
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     padding: 25px;
 }
