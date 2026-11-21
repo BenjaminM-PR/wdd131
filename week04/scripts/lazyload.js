@@ -1,0 +1,1 @@
+const LastModified = document.getElementById("LastModified").textContent = document.lastModified

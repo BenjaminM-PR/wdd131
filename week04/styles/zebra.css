@@ -1,0 +1,41 @@
+table {
+    width: 400px;
+    border: 1px solid rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.1);
+    border-collapse: collapse;
+
+
+
+
+    th, td {
+        padding: 0.5em 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    thead th, tbody td {
+        text-align: center;
+    }
+
+    thead {
+        color: white;
+        background-color: black;
+        th {
+            font-size: large;
+            padding: 1rem;
+        }
+        tr:nth-last-child(1) {
+            background-color: rgb(189, 189, 189);
+        }
+
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: grey;
+    }
+
+    caption {
+        caption-side: bottom;
+    }
+    .blank {
+        background-color: black;
+    }
+}

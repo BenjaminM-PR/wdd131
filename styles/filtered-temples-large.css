@@ -1,0 +1,42 @@
+@media only screen and (min-width: 500px) {
+    #display-menu {
+        display: none;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 0 0;
+    }
+    .title h1 {
+        display: block;
+        padding: 15px;
+    }
+    
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        background-color: var(--primary-color);
+        justify-content: space-between;
+        min-width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        margin-right: 15px;
+    }
+    
+    nav {
+        margin: 10px;
+    }
+
+    .selection li {
+        display: block;
+        flex: 1 1 100%;
+        
+    }
+
+
+}
