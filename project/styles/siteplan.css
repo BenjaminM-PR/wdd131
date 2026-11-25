@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #ffe922;
+    --contrast-color: #352e4d;
+    --background-color: #151515;
+    --text-color: #22D3EE;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Asap Sharp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+header {
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: #151515;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 35% 1fr;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    grid-row: 1/3;
+    padding: 0 50px 0 0;
+}
+
+header h3, header h1 {
+    padding: 0 50px;
+    margin: 0;
+}
+
+header h3 {
+    align-self: end;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+
+
+
+main {
+    padding: 0 20px;
+}
+
+
+h2 {
+    width: fit-content;
+    border-bottom: 5px solid var(--contrast-color);
+    border-radius: 4px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.full {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.colorcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 200px;
+    text-align: center;
+    color:#151515;
+}
+
+.color-card_swatch {
+    height: 54px;
+    border-bottom: 1px solid black;  
+}
+
+
+.one{
+    background-color: var(--primary-color);    
+}
+
+.two {
+    background-color: var(--background-color);
+}
+
+.three {
+    background-color: var(--contrast-color);
+}
+
+.four {
+    background-color: var(--text-color);
+}
+
