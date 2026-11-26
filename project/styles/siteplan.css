@@ -7,6 +7,7 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+
     font-family: "Asap Sharp", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -21,6 +22,13 @@ header {
     display: grid;
     grid-template-columns: 15% 1fr;
     grid-template-rows: 35% 1fr;
+    border: 10px solid var(--contrast-color);
+    border-radius: 5px;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header img {
@@ -101,3 +109,6 @@ li {
     background-color: var(--text-color);
 }
 
+.wireframe p, .wireframe img {
+    margin: 5px 20px;
+}
