@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+
+
+
+    <main>
+        <form method="get" action="review.html"  class="mainform">
+            <fieldset>
+                <label for="">Product Name
+                    <select id="product" name="product" required>
+                        <option value="">Select a Product... &#9662;</option>
+                        <span id="products"></span#>
+                    </select>
+                </label>
+
+
+                <div>Overall Rating</div>
+                <div class="container">
+                    <label><input type="radio" id="rating" name="rating" value="one-star" required>&star;</label>
+                    <label><input type="radio" id="rating" name="rating" value="two-star" required>&star;&star;</label>
+                    <label><input type="radio" id="rating" name="rating" value="three-star" required>&star;&star;&star;</label>
+                    <label><input type="radio" id="rating" name="rating" value="four-star" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" id="rating" name="rating" value="five-star" required>&star;&star;&star;&star;&star;</label>
+                </div>
+                <label>Date Of Instalation <input type="date" id="completedate" name="completedate" required></label>
+
+                <div>Which features did you find useful in the product? (check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="easyofuse" name="easyofuse" value="yes">Easy of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+
+                <label>Written Review <span class="optional">(Optional)</span><textarea id="username" name="username"></textarea></label>
+
+                <label>Your Name <span class="optional">(Optional)</span><input type="text" id="fname" name="fname"></label>
+
+                <input type="submit" value="Post Review">
+
+            </fieldset>
+
+            
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> | Benjamin Paiva | Chile</p>
+        <p class="modification">Last Modification: <span id="LastModified"></span></p>
+    </footer>
+</body>
+</html>
